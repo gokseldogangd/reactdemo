@@ -1,0 +1,22 @@
+.work {
+    background-color: #242424;
+    color: rgb(255, 255, 255);
+    font-family: 'Sofia Pro', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 15rem;
+}
+
+.worklogo {
+    width: 350px;
+}
+
+.work-title h2{
+    color: rgb(255, 255, 255);
+    font-family: Sofia, sans-serif;
+    font-size: 8rem;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,115 @@
+.services {
+    height:fit-content;
+    min-height: 100vh;
+    background: rgb(243,85,221);
+    background: linear-gradient(to bottom right, rgba(243,85,221,1) 12%, rgba(140,131,241,1) 48%, rgba(22,200,211,1) 82%);
+  
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 5rem;
+}
+
+
+.wrapper {
+    display: flex;
+    padding-top: 10rem;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10rem;
+}
+
+.wrapper .services-title {
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.22rem;
+    text-transform: uppercase;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.rightpage {
+    padding-top:10rem;
+}
+
+.button {
+    color:rgb(0, 0, 0);
+    opacity: 0.2;
+    background-color:transparent;
+    font-family: 'Sofia Pro';
+    font-size: 5.5rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3rem;
+    text-align: start ;
+}
+
+.btn {
+    background: transparent;
+    border: 0.2rem solid rgb(255, 255, 255);
+    padding: 1.8rem 3.25rem;
+    color: rgb(255, 255, 255);
+    font-family: Circular, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    border-radius: 3rem;
+    margin-top: 2.5rem;
+    min-width: 20rem;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.25s ease 0s, color 0.25s ease 0s;
+}
+
+.btn:hover {
+   background-color:rgb(255, 255, 255) ;
+   color:rgb(243,85,221);
+   cursor: pointer;
+
+}
+
+.button:active{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.focus {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.button:focus{
+    color: rgb(255, 255, 255);
+    opacity: 1;
+}
+
+.toggleContent {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .images {
+    width: 550px;  
+    object-fit: cover;
+}
+
+.content img {
+    width: 100%;
+    
+}
+
+.content .text {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    margin-top: 5rem;
+}

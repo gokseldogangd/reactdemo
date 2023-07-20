@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ body {
+	background:#EEF4FF;
+	margin:0;
+}
+
+.spacer {
+	width:100%;
+	height:50vh;
+	background:#ddd;
+}
+
+
+
+
+.headline {
+	background:#2D4E86;
+	border-radius:6px;
+	height:4em;
+	width:100%;
+}
+
+.text {
+	margin:0.8em 0 0 0;
+	background:#2D4E86;
+	border-radius:6px;
+	height:1em;
+	width:100%;
+}
+
+
+
+
+.gallery {
+  display:flex;	
+  outline:1px solid red;
+}
+
+.left {
+	width:50%;
+}
+
+.detailsWrapper {
+	margin:auto;
+	width:80%;
+}
+
+.details {
+	height:100vh;
+	outline:1px solid green;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+
+.right {
+	outline:1px solid purple;
+	width:50%;
+	height:100vh;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.photos {
+	width:40vw;
+	height:40vw;
+
+	position:relative;
+}
+
+.photo {
+	position:absolute;
+	width:650px;
+	height:100%;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.red {
+	background: red;
+}
+
+.green {
+	background:green;
+}
+
+.blue {
+	background:blue;
+}
+    </style>
+</head>
+<body>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+<div class="container">
+    <div class="gallery">
+        <div class="left">
+            <div class="detailsWrapper">
+                <div class="details">
+                    <div class="headline red"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                </div>
+    
+                <div class="details">
+                    <div class="headline green"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                </div>
+    
+                <div class="details">
+                    <div class="headline blue"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                    <div class="text"></div>
+                </div>
+    
+            </div>
+        </div>
+    
+        <div class="right">
+            <div class="photos">
+                <div class="photo red">
+                    <img src="./img/bg.png" alt="">
+                </div>
+                <div class="photo green">
+                    <img src="./img/work.png" alt="">
+                </div>
+                <div class="photo blue">
+                    <img src="./img/bg.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
+</body>
+ <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+ <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+
+
+<script>gsap.set(".photo", {opacity:0, scale:0})
+
+
+    const animation = gsap.to(".photo", {
+        opacity:1, scale:0.5, duration:1, stagger:1
+    })
+    
+    ScrollTrigger.create({
+        trigger:".gallery",
+        start:"top top",
+        end:"bottom bottom",
+        pin:".right",
+        pinSpacing:true,
+        animation: animation,
+        scrub:true,
+        markers:true
+    })
+    
+    
+    
+    
+    /* ScrollTrigger Docs
+    
+    https://greensock.com/docs/v3/Plugins/ScrollTrigger
+    
+    */
+    
+    
+    
+    
+    
+    /* 
+    
+    learn more GreenSock and ScrollTrigger
+    
+    https://www.creativeCodingClub.com
+    
+    new lessons weekly
+    less than $1 per week
+    
+    */</script>
+</html>

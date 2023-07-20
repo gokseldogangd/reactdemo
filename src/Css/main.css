@@ -1,0 +1,78 @@
+
+Video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.section {
+    width: 100%;
+    margin-bottom: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.video-animation {
+    width: 50%;
+    position: relative;
+}
+
+.section .text {
+    width:40%;
+    margin-left: 5%;
+    
+}
+
+.section .text h1 {
+    color: rgb(55, 55, 55);
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 5.5rem;
+    font-weight: 900;
+    letter-spacing: -0.075rem;
+    margin-left: 2.5rem;
+    max-width: 14ch;
+}
+
+.section .text h2{
+    color: rgb(55, 55, 55);
+    font-family: Circular, sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 2.5rem;}
+
+
+    .section-text {
+        width: 100%;
+    max-width: 80%;
+    margin: 0px auto 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    align-items: center;
+    }
+
+    .section-text .text-two {
+        font-family: 'Sofia Pro', sans-serif;
+        font-size: 5.5rem;
+        font-weight: 900;
+        line-height: 1.1;
+        color: rgb(55, 55, 55);
+        max-width: 28ch;
+        margin-top: 1rem;
+        margin-bottom: 16rem;
+        margin-left: 5%; 
+
+    }
+
+    .section-text .text-two strong {
+        color: rgb(247, 78, 161);
+    }
