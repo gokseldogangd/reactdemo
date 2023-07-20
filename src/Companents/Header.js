@@ -29,9 +29,8 @@ function Header() {
       <p>We’re a creative web design agency based in London that crafts beautiful and original websites for brands who <strong>refuse to blend in.</strong></p></h2>
     </div>
     <HelmetProvider>
-    <Helmet defer={true}>
-            <script src='../js/bgbundle.js' async></script> 
-            <script src='../js/bg.js' async></script>
+      <Helmet defer={true}>
+      <script src='/js/bg.js' async></script>
       </Helmet>
 
     </HelmetProvider>
