@@ -10,8 +10,11 @@ function Section() {
                    <div className='worklogo'>
                       <img src={worklogo} alt="" />
                    </div>
-                   <div>
-                     <img src="https://kota.co.uk/static/b901008105443735e748de547c293de3/4e70a/Image-wogan-43.webp" alt="" />
+                   <div className='card'>
+                     <div className='card-img'>
+                        <img src="https://kota.co.uk/static/b901008105443735e748de547c293de3/4e70a/Image-wogan-43.webp" alt="" />
+                     </div>
+                      
                    </div>
                    <div></div>
                    <div></div>
