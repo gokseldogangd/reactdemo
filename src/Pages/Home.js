@@ -5,6 +5,8 @@ import Pictures from '../Companents/Pictures'
 import Services from '../Companents/Services'
 import Section from '../Companents/Section'
 import HeaderWrapper from '../Companents/HeaderWrapper'
+import Article from '../Companents/Article'
+import Footer from '../Companents/Footer'
 
 
 function Home() {
@@ -15,6 +17,8 @@ function Home() {
       <Pictures/>
       <Services/>
       <Section/>
+      <Article/>
+      <Footer/>
     </div>
   )
 }

@@ -1,0 +1,139 @@
+.footer {
+    margin-top:15rem;
+    background-color: rgb(36, 36, 36);
+    height: 80vh;
+}
+
+
+.footer-nav {
+    padding-top:5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.ft-ex  .ft-t {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(247, 78, 161);
+    font-family: 'Sofia Pro', sans-serif;
+  
+}
+.ft-ex  .ft-t:hover {
+    color:white;
+}
+
+.ft-of  .ft-t {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(247, 78, 161);
+    font-family: 'Sofia Pro', sans-serif;
+  
+}
+.ft-of  .ft-t:hover {
+    color:white;
+}
+.footer-nav ul li {
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    transition: color 0.2s ease-in-out 0s;
+    font-family: 'Sofia Pro';
+}
+
+.footer-nav ul li:hover {
+    color: rgb(243,85,221);
+    cursor: pointer;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: relative;
+}
+
+
+.ft-pc {
+    margin-top: 5rem;
+}
+
+
+.pictures-ft {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    bottom: 5rem;
+    width: 100px;
+    gap:5rem;
+  
+}
+.ft-ex ul li {
+
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    transition: color 0.2s ease-in-out 0s;
+
+
+}
+    
+
+.ft-of ul li {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Sofia Pro', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    transition: color 0.2s ease-in-out 0s;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: flex-end;
+    margin-left: 15rem;
+}
+
+.follow-t h2 {
+    font-size: 1.4rem;
+    line-height: 1.25;
+    letter-spacing: 0.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(247, 78, 161);
+    font-family: 'Sofia Pro', sans-serif;
+
+}
+
+.social {
+   
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 5rem;
+    color: white;
+    transition: color 0.2s ease-in-out 0s;
+
+}
+
+.social svg:hover {
+    color: rgb(247, 78, 161);
+    cursor:pointer;
+}
+
+.mail ul li {
+    font-size: 3rem;
+    font-weight: 900;
+}

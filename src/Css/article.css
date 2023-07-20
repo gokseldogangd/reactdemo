@@ -1,0 +1,103 @@
+.article {
+    margin:20rem auto;
+    max-width: 1200px;
+    padding: 3rem;
+}
+
+
+.article-title h2 {
+    color: rgb(55, 55, 55);
+    font-family: Sofia, sans-serif;
+    font-size: 5.5rem;
+    letter-spacing: -0.075rem;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.blog {
+    outline: 1px solid black;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+}
+
+
+
+.blog img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.blog:hover{
+    background-color:rgb(247, 78, 161) ; 
+}
+
+
+.blog:hover img {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+
+
+
+.blog:hover .blog-title {
+    transform: translateY(0); 
+    cursor: pointer;    
+}
+
+.blog:hover h2 {
+    color: white;
+}
+
+
+.blog-title h2 {
+    color: rgb(36, 36, 36);
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.33;
+    letter-spacing: -0.075rem;
+    margin: 3rem;
+    transition: color 0.25s ease 0s;
+    
+}
+
+.btn-primary {
+    background: transparent;
+    border: 0.2rem solid rgb(243,85,221);
+    padding: 1.8rem 3.25rem;
+    color: rgb(243,85,221);
+    font-family: Circular, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    border-radius: 3rem;
+    margin-top: 2.5rem;
+    min-width: 20rem;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.25s ease 0s, color 0.25s ease 0s;
+}
+
+.btn-primary:hover{
+    background-color:rgb(243,85,221);
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+ 
+ }
+
+ .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
