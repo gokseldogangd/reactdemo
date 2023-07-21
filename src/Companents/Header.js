@@ -5,15 +5,15 @@ import images2 from '../İmg/the-drum-logo.png';
 import images3 from '../İmg/Clutch_grey.png';
 import images4 from '../İmg/awward_grey.png';
 import images5 from '../İmg/css-design-awards.png';
-import { Helmet } from 'react-helmet'
-import { HelmetProvider } from 'react-helmet-async';
+
+import WaterFlowAnimation from './WaterFlowAnimation';
 
 
 function Header() {
   return (
    
     <div className='header container'>
-   
+     <WaterFlowAnimation/>
     <div className='picture' >
        <div className="pictures">
           <img src={images1} alt="" />
@@ -28,13 +28,7 @@ function Header() {
       <h2>
       <p>We’re a creative web design agency based in London that crafts beautiful and original websites for brands who <strong>refuse to blend in.</strong></p></h2>
     </div>
-    <HelmetProvider>
-      <Helmet defer={true}>
-      <script src='/js/bg.js' async></script>
-      </Helmet>
 
-    </HelmetProvider>
-  
       </div> 
       
      
